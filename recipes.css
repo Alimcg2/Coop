@@ -27,22 +27,9 @@ h2{
     color: white;
     font-weight: normal;
     text-shadow: 0 0 10px black;
-}
-#mainTitle {
     margin-top: 140px;
 }
 
-#beanScroll {
-    position: absolute;
-    margin-top: -230px;
-    margin-left: 230px;
-    width: 400px;
-}
-#beanScroll2 {
-    position: absolute;
-    margin-left: -500px;
-    width: 400px;
-}
 
 /* 
 The header bar contianing links:
@@ -63,107 +50,87 @@ header {
     align-items: center;
     /* handles the look of the text */
     font-family: 'Raleway', sans-serif;
-    z-index: 1;
+    z-index: 2;
     top: 0px;
 }
+
 header a {
     font-size: 25px;
     padding: 50px;
     color: white;
 }
+
 header a:hover {
     text-shadow: 0 0 4px #FFFFFF;
 }
-/* 
-The menu area
-___________________________________________________________________________________
-*/
 
-#menuOuter {
-    border: 1px solid white;
-    width: 50%;
+#mainContent {
     padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-}
-#menuBox{
-    background-image: url("Images/beans.jpg");
-    margin: auto;
-}
-
-#menu {
-    background-color: rgba(29, 31, 40, .95);
-    width: 85%;
-    padding: 20px;
-    margin: auto;
     
 }
 
-#menuTitle {
-    border: 1px solid white;
-}
-h3 {
-    color: white;
-    font-size: 30px;
-    padding: 10px;
-}
-
-.menuSection {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.items, .price{
-    color: white;
-    display: inline;
-}
-.items {
-    float: left;
-}
-.price {
-    float: right;
-}
-
-
 /* 
-The about boxes
+The recipe cards
 ___________________________________________________________________________________
 */
-#aboutText {
-    width: 50%;
-    margin: auto;
-}
-#aboutImgBox{
-    width: 450px;
+
+.recipeBox {
+    background-color: #c1c9c2;
+    color: black;
+    padding: 40px;
+    height: 800px;
     border: 1px solid white;
-    padding: 10px;
 }
 
-#aboutImg {
-    width: 100%;
-    margin: auto;
-    display: inline;
-}
-
-#about {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-.aboutBox {
+.container {
     border: 1px solid white;
-    margin: auto;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.about {
-    color: white;
-    margin: auto;
-    background: rgba(0, 0, 0, .5);
     padding: 20px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.bean, .servings, .time, .ingredients, .instructions {
+    padding: 10px;
+}
+
+.servings, .time {
+    display: inline-block;
+    
+}
+.bean {
+    background-color: rgba(72, 79, 73,0.2);
+}
+.ingredientList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredients {
+    background-color: rgba(255,255,255,0.4);
+    margin-left: 10px;
+}
+
+/* 
+The floating images
+___________________________________________________________________________________
+*/
+
+#foodImg {
+    position: absolute;
+    top: 24%;
+    right: 10%;
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 1;
+}
+#leafyImg {
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+    left: 0px;
+    margin-top: -20%;
+    z-index: 1;
 }
