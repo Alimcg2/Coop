@@ -56,7 +56,7 @@ header {
     /* handles the placement of the bar */
     position: fixed;
     height: 70px;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
     width: 100%;
     /* handles the text alignment */
     text-align: center;
@@ -73,8 +73,23 @@ header a {
     padding: 50px;
     color: white;
 }
+
 header a:hover {
     text-shadow: 0 0 4px #FFFFFF;
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 1100px) {
+    header a {
+        padding: 20px;
+    }
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 800px) {
+    header a {
+        display: none;
+    }
 }
 
 
@@ -148,7 +163,7 @@ ________________________________________________________________________________
     border-radius: 50%;
     box-shadow: 0 0 5px white;
 }
-#values button {
+.valueButton {
     padding: 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -168,7 +183,7 @@ _____________________________________________________________________________
 #projects {
     margin-top: 100px;
     text-align: center;
-    background: url("Images/carrots.jpg");
+    background-image: url("Images/kale.jpg");
     padding-bottom: 60px;
 }
 #projectTitle {
@@ -201,7 +216,7 @@ h3 {
     width: 30%;
     font-size: 55px;
     font-family: sprout;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: normal;
     padding: 0;
 }
@@ -225,6 +240,7 @@ ________________________________________________________________________________
 #missionStatement h2{
     padding-top: -10px;
 }
+
 #missionStatement {
     width: 60%;
     margin: auto;
@@ -265,3 +281,9 @@ ________________________________________________________________________________
     background: rgba(0, 0, 0, .5);
      
  }
+.paralax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

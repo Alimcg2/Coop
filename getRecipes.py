@@ -1,13 +1,11 @@
 import re
 from flask import *
-
-app = Flask(__name__)
-
 from flask_cors import CORS
+
 app = Flask(__name__)
 CORS(app)
-@app.route('/', methods=['GET', 'OPTIONS'])
 
+@app.route('/')
 def main():
     file = open("recipes.txt", "r")
     file = file.read()
@@ -30,7 +28,7 @@ def main():
                     "instructions" : info[6]
                 }
                 data.append(object)
-    return(jsonify(data))
+    return jsonify(data)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)

@@ -34,8 +34,7 @@ h2{
 
 #beanScroll {
     position: absolute;
-    margin-top: -230px;
-    margin-left: 230px;
+    margin-top: -160px;
     width: 400px;
 }
 #beanScroll2 {
@@ -53,7 +52,7 @@ header {
     /* handles the placement of the bar */
     position: fixed;
     height: 70px;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
     width: 100%;
     /* handles the text alignment */
     text-align: center;
@@ -66,6 +65,8 @@ header {
     z-index: 1;
     top: 0px;
 }
+
+
 header a {
     font-size: 25px;
     padding: 50px;
@@ -153,6 +154,7 @@ ________________________________________________________________________________
     margin: auto;
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 .aboutBox {
     border: 1px solid white;
@@ -166,4 +168,27 @@ ________________________________________________________________________________
     margin: auto;
     background: rgba(0, 0, 0, .5);
     padding: 20px;
+}
+
+
+iframe {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#orderLink {
+    font-size: 28px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+#orderLink:link{
+    color:black;
+}
+#orderLink:visited{
+    color:black;
+}
+
+#orderLink:hover {
+    background-color: rgba(255, 255, 255, 0.7);
 }

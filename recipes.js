@@ -12,7 +12,8 @@
         data.onerror = function() {
             alert("There was an error getting the recipes");
         }
-        data.send();
+        
+        data.send(null);
     }
 
     
