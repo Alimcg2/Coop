@@ -1,0 +1,60 @@
+/* 
+general body and font declarations 
+___________________________________________________________________________________
+*/
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+@font-face {
+    font-family: sprout;
+    src: url("sprout.ttf");
+}
+/* 
+The header bar contianing links:
+with home, about, recipes, bean basket and get involved 
+___________________________________________________________________________________
+*/
+header {
+    /* handles the placement of the bar */
+    height: 70px;
+    width: 100%;
+    /* handles the text alignment */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* handles the look of the text */
+    font-family: 'Raleway', sans-serif;
+    z-index: 1;
+}
+header a {
+    font-size: 25px;
+    padding: 30px;
+    color: black;
+}
+
+header a:hover {
+    text-shadow: 0 0 4px #000000;
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 880px) {
+    header {
+        display: none;
+    }
+}
+
+
+@font-face {
+    font-family: sprout;
+    src: url("sprout.ttf");
+}

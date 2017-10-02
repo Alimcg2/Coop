@@ -1,9 +1,0 @@
-projectTitle1 = SFC Cookbook
-projectDescr1 = The ASUW SFC created a free cookbook that is tailored to student needs. The cookbook includes recipes using ingredients that are in season each quarter and are tied to the food options available in the University District.
-projectTitle2 = Humble Feast
-projectDescr2 = Humble Feast is a celebration of locally-sourced organic sustainable food! It is a 4 course feast cooked by co-op students for our local community. Speakers range from the importance of farming critiques of the food system food desserts and much much more.
-projectTitle3 = Recipe Testing
-projectDescr3 = We recipe test to foster a creative cooking outlet for students and bring together a community interested in cooking sustainably locally and on a budget.
-projectTitle4 = The Bean Basket
-projectDescr4 = The ASUW SFC Bulk Buying Club will empower students and UW community members by providing a distribution network and store front for staple foods in bulk that are both high quality food and affordable.
-missionStatement = We seek to build a supportive cooperative community of engaged empowered students through education about conscious consumption and their right to access nutritious ethically-produced and affordable food on the University of Washington campus.

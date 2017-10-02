@@ -1,0 +1,177 @@
+/* 
+general body and font declarations 
+___________________________________________________________________________________
+*/
+body {
+    background-color: #8aa08c;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: sprout;
+    src: url("sprout.ttf");
+}
+
+h2{
+    font-size: 90px;
+    font-family: sprout;
+    color: white;
+    font-weight: normal;
+    text-shadow: 0 0 10px black;
+    padding: 70px;
+}
+
+#main {
+    margin-bottom: 70px;
+}
+/* 
+The header bar contianing links:
+with home, about, recipes, bean basket and get involved 
+___________________________________________________________________________________
+*/
+header {
+    /* handles the placement of the bar */
+    top: 0px;
+    position: fixed;
+    height: 70px;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    /* handles the text alignment */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* handles the look of the text */
+    font-family: 'Raleway', sans-serif;
+    z-index: 1;
+}
+header a {
+    font-size: 25px;
+    padding: 50px;
+    color: white;
+}
+
+header a:hover {
+    text-shadow: 0 0 4px #FFFFFF;
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 1100px) {
+    header a {
+        padding: 20px;
+    }
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 800px) {
+    header a {
+        display: none;
+    }
+}
+
+ 
+/* 
+Main content
+___________________________________________________________________________________
+*/
+
+.paralax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    margin: auto;
+    background-color: rgba(0,0,0,0.7);
+    padding: 100px;
+}
+#introImg {
+    padding: 90px;
+}
+h3 {
+    font-size: 50px;
+    font-family: sprout;
+    color: white;
+    font-weight: normal;
+    background-color: #454f46;
+    letter-spacing: 5px;
+    padding: 60px;
+}
+
+#intro {
+    background-image: url("Images/potato.jpg");
+}
+
+.paralax p{
+    width: 80%;
+    margin: auto;
+    z-index: 3;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+}
+
+#pledge {
+    background-image: url("Images/kale.jpg");
+}
+li {
+    text-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    list-style-type: none;
+}
+#value1 {
+    background-image: url("Images/tomatoes.jpg");
+}
+#value2{
+    background-image: url("Images/corn.jpg");
+}
+#value3 {
+    background-image: url("Images/eggplant.jpg");
+}
+    
+#value1 p{
+    padding: 30px;
+}
+/* 
+The floating food
+___________________________________________________________________________________
+*/
+#main img{
+    width: 300px;
+    position: absolute;
+}
+#potato {
+    right: 20px;
+    margin-top: -200px;
+}
+#kale {
+    left: 20px;
+    margin-top: -200px;
+}
+#tomato {
+    right: 60px;
+    margin-top: -200px;
+}
+#corn {
+    left: 60px;
+    margin-top: -120px;
+    width: 400px;
+}
+#eggplant {
+    right: 0px;
+    margin-top: -180px;
+}
