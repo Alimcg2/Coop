@@ -62,9 +62,9 @@ ________________________________________________________________________________
 
 h2 {
     font-size: 90px;
-    font-weight: 100;
+    font-weight: 200;
     margin: 0px;
-    font-family: sprout;
+    font-family: 'Raleway', sans-serif;
 }
 
 #valueArea {
@@ -96,8 +96,8 @@ h2 {
 }
 
 .value:hover hr {
-    width: 20px;
-    border: 1px solid #96003e;
+    border: 1px solid #bca7a7;
+    width: 300px;
     -webkit-transition: width .5s, border .5s; /* Safari */
     transition: width .5s, border .5s;
 }
@@ -116,13 +116,8 @@ h2 {
     background-color: rgba(0, 0, 0, .2);
     color: black;
 }
-.value:hover .valueImgOver img{
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    -webkit-transition: -webkit-filter 1s;; /* Safari */
-    transition: filter 1s;
 
-}
+
 #values button:hover{
     background-color: rgba(0, 0, 0, .4);
 }
@@ -222,16 +217,25 @@ _____________________________________________________________________________
     font-style: italic;
 }
 
-
+.project hr {
+    border: 1px solid black;
+    width: 100px;
+}
+.project:hover hr {
+    border: 1px solid #bca7a7;
+    width: 300px;
+    -webkit-transition: width .5s, border .5s; /* Safari */
+    transition: width .5s, border .5s;
+}
 .projectImg {
-    width: 500px;
+    width: 400px;
     z-index: -1;
     height: 480px;
 }
 .projectImgOverlay {
     transform-style: preserve-3d;
 }
-#feastImg, #recipeImg{
+#feastImg, #recipeImg, #beanBasketImg{
     width: 440px;
 }
 
@@ -261,7 +265,7 @@ _____________________________________________________________________________
     height: 350px;
     margin-top: 100px;
 }
-
+#grapefruit
 h3 {
     font-size: 30px;
     font-weight: 100;
@@ -300,6 +304,17 @@ ________________________________________________________________________________
     width: 40%;
     float: right;
     margin-right: 5%;
+}
+#missionStatement hr {
+    border: 1px solid black;
+    width: 36%;
+}
+
+#missionStatement:hover hr {
+    border: 1px solid #6c7f6d;
+    width: 60%;
+    -webkit-transition: width .5s, border .5s; /* Safari */
+    transition: width .5s, border .5s;
 }
     
 

@@ -1,0 +1,354 @@
+
+/* 
+The first section with the title and logo
+____________________________________________________________________________________
+*/
+body {
+    background-image: linear-gradient(0deg, #89b194 0%, #e0e0e0 24%, #ffffff 49%, #ffffff 75%, #ffffff 100%);
+
+}
+#title {
+    width: 100%;
+    margin-bottom: 250px;
+    text-align: center;
+    
+}
+#title h1 {
+    font-size: 150px;
+    display: inline;
+    font-family: sprout;
+    color: black;
+    vertical-align: text-bottom;
+    font-weight: normal;
+}
+#logo {
+    height: 400px;
+    margin-bottom: -50px;
+    transform: rotate(7deg);
+}
+
+#asuw {
+    margin-right: -60px;
+}
+#sfc {
+    margin-left: -90px;
+    margin-top: -100px;
+}
+
+#titleText {
+    font-size: 25px;
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 700px) {
+    #title img {
+        width: 90%;
+    }
+}
+
+
+/* 
+Our Values section
+____________________________________________________________________________________
+*/
+#values {
+    width: 100%;
+    text-align: center;
+}
+
+#valuesOuter{
+    background-image: linear-gradient(180deg, #d8d8d8 0%, #bca7a7 100%);
+}
+
+h2 {
+    font-size: 90px;
+    font-weight: 200;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#valueArea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.value{
+    width: 320px;
+    margin: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.valueDescr {
+    font-weight: 100;
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+.valueImgOver img {
+    width: 150px;
+    border-radius: 50%;
+}
+.value hr {
+    border: 1px solid black;
+    width: 100px;
+}
+
+.value:hover hr {
+    border: 1px solid #bca7a7;
+    width: 300px;
+    -webkit-transition: width .5s, border .5s; /* Safari */
+    transition: width .5s, border .5s;
+}
+#valuesTitle {
+    width: 250px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -350px;
+}
+
+.valueButton {
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, .2);
+    color: black;
+}
+
+
+#values button:hover{
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#valueBottom {
+    width: 60%;
+    height: 20%;
+    margin-bottom: -250px;
+}
+
+.slanted {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.slanted:before, .slanted:after {
+    content: "";
+    height: 400px;
+    transform: skewY(5deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slanted:before{    
+    top: -100px;
+    background-color:  #d8d8d8;
+}
+
+.slanted:after {
+    bottom: -100px;
+    background-color:  #bca7a7;
+}
+
+#beansImg {
+    width: 30%;
+}
+/* 
+Projects section 
+_____________________________________________________________________________
+*/
+
+
+#ProjectsBackground {
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+    height: 200px;
+    transform: skewY(5deg);
+    z-index: 3;
+    position: absolute;
+}
+
+#projects {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 3;
+}
+
+#projectTitle {
+    padding-top: 120px;
+}
+
+
+#projectFlex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    vertical-align: center;
+    margin-top: 40px;
+}
+.project div {
+    width: 50%;
+    margin: auto;
+}
+.project p{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+.project hr {
+    border: 1px solid black;
+    width: 100px;
+}
+.project:hover hr {
+    border: 1px solid #bca7a7;
+    width: 300px;
+    -webkit-transition: width .5s, border .5s; /* Safari */
+    transition: width .5s, border .5s;
+}
+.projectImg {
+    width: 400px;
+    z-index: -1;
+    height: 480px;
+}
+.projectImgOverlay {
+    transform-style: preserve-3d;
+}
+#feastImg, #recipeImg, #beanBasketImg{
+    width: 440px;
+}
+
+.ProjectIndiImg {
+    width: 200px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 170px;
+    height: 300px;
+    transform: translateZ(20px);
+}
+
+.right .ProjectIndiImg {
+    margin-left: 63%;
+}
+.left .ProjectIndiImg {
+    margin-left: 13%;
+}
+
+#beans {
+    margin-top: 290px;
+    height: 200px;
+    width: 300px;
+}
+#beet {
+    width: 250px;
+    height: 350px;
+    margin-top: 100px;
+}
+#grapefruit {
+    
+}
+h3 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0px;
+    margin-top: 100px;
+}
+
+/* 
+About us section
+___________________________________________________________________________________
+*/
+
+#about {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#about p {
+    font-size: 24px;
+    font-weight: 300;
+    display: inline;
+}
+
+#missionStatement {
+    position: absolute;
+    margin-top: 13%;
+    width: 58%;
+    margin-left: 23%;
+}
+#missionBG {
+    width: 27%;
+    float: left;
+    margin-left: 5%;
+}
+#missionBG2 {
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+}
+#missionStatement hr {
+    border: 1px solid black;
+    width: 36%;
+}
+
+#missionStatement:hover hr {
+    border: 1px solid #6c7f6d;
+    width: 60%;
+    -webkit-transition: width .5s, border .5s; /* Safari */
+    transition: width .5s, border .5s;
+}
+    
+
+
+
+/* 
+Footer
+___________________________________________________________________________________
+*/
+
+#footer {
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    padding-top: 5px;
+    background: rgba(0, 0, 0, .5);
+     
+ }
+.paralax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
