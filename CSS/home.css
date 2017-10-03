@@ -13,30 +13,39 @@ body {
     text-align: center;
     
 }
+#bgImg {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transform-style: preserve-3d;
+    background-image: url("BACKGROUND.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 70% 110%;
+    padding: 50px;
+   
+}
 #title h1 {
     font-size: 150px;
-    display: inline;
+    position: absolute;
     font-family: sprout;
     color: black;
-    vertical-align: text-bottom;
     font-weight: normal;
-}
-#logo {
-    height: 400px;
-    margin-bottom: -50px;
-    transform: rotate(7deg);
+    margin-left: 10%;
+    transform: translateZ(20px);
 }
 
-#asuw {
-    margin-right: -60px;
+#logo {
+    height: 400px;
+    margin-top: -40px;
+    margin-left: 140px;
+    transform: translateZ(20px);
 }
-#sfc {
-    margin-left: -90px;
-    margin-top: -100px;
-}
+
 
 #titleText {
     font-size: 25px;
+    transform: translateZ(20px);
 }
 
 /* Header for phones and tablets*/
@@ -265,7 +274,9 @@ _____________________________________________________________________________
     height: 350px;
     margin-top: 100px;
 }
-#grapefruit
+#grapefruit {
+    
+}
 h3 {
     font-size: 30px;
     font-weight: 100;
@@ -317,36 +328,3 @@ ________________________________________________________________________________
     transition: width .5s, border .5s;
 }
     
-
-
-
-/* 
-Footer
-___________________________________________________________________________________
-*/
-
-#footer {
-    bottom: 0px;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    height: 50px;
-    padding-top: 5px;
-    background: rgba(0, 0, 0, .5);
-     
- }
-.paralax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-
-
-
