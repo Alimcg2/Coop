@@ -15,29 +15,26 @@ body {
 }
 #bgImg {
     margin-top: 40px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
     transform-style: preserve-3d;
-    background-image: url("BACKGROUND.png");
+    background-image: url("Images/BACKGROUND.png");
     background-repeat: no-repeat;
     background-position: center; 
-    background-size: 70% 110%;
+    background-size: 700px 100%;
     padding: 50px;
    
 }
 #title h1 {
     font-size: 150px;
-    position: absolute;
     font-family: sprout;
     color: black;
     font-weight: normal;
-    margin-left: 10%;
     transform: translateZ(20px);
 }
 
 #logo {
     height: 400px;
-    margin-top: -40px;
+    margin-top: -400px;
     margin-left: 140px;
     transform: translateZ(20px);
 }
@@ -48,12 +45,6 @@ body {
     transform: translateZ(20px);
 }
 
-/* Header for phones and tablets*/
-@media screen and (max-width: 700px) {
-    #title img {
-        width: 90%;
-    }
-}
 
 
 /* 
