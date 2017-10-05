@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1">
 	<title>UW Student Food Coop</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
         <script src="jquery-3.2.1.min.js"></script>
@@ -78,7 +79,7 @@
               <div class="projectImgOverlay">
                 <img  src="Images/Home/PROJECTS2.png" class="projectImg" id="feastImg">
               </div>
-                <img data-tilt src="Images/Individual/slice.png" class="ProjectIndiImg"> 
+                <img data-tilt src="Images/Individual/slice.png" id="grapefruit" class="ProjectIndiImg"> 
               <div>
 	        <h3>Humble Feast</h3>
                 <hr>
@@ -113,12 +114,16 @@
 	<section id="about" >
           <img src="Images/Home/MISSION.png" id="missionBG">
           <img src="Images/Home/MISSION2.png" id="missionBG2">
-		<div id="missionStatement" >
-		  <h2>Mission</h2>
-                  <hr>
-                  <p>We seek to build a supportive, cooperative community of engaged, empowered students through education about conscious consumption and their right to access nutritious, ethically-produced, and affordable food on the University of Washington campus.</p>
-                </div>
+	  <div id="missionStatement" >
+            <div id="missionStatementBorder">
+	      <h2>Mission</h2>
+              <hr>
+              <p>We seek to build a supportive, cooperative community of engaged, empowered students through education about conscious consumption and their right to access nutritious, ethically-produced, and affordable food on the University of Washington campus.</p>
+            </div>
+          </div>
 	</section>
         <script src="Tilt/tilt.jquery.js"></script>
+        <div id="bottom"></div>
   
 </body>
+</html>

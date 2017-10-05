@@ -266,7 +266,8 @@ _____________________________________________________________________________
     margin-top: 100px;
 }
 #grapefruit {
-    
+    height: 250px;
+    margin-top: 250px;
 }
 h3 {
     font-size: 30px;
@@ -275,10 +276,7 @@ h3 {
     margin-top: 100px;
 }
 
-/* 
-About us section
-___________________________________________________________________________________
-*/
+
 
 #about {
     text-align: center;
@@ -290,23 +288,33 @@ ________________________________________________________________________________
     font-weight: 300;
     display: inline;
 }
+#missionStatementBorder {
+    border: 1px solid black;
+    padding: 10px;
+}
 
 #missionStatement {
     position: absolute;
-    margin-top: 13%;
+    margin-top: 10%;
     width: 58%;
-    margin-left: 23%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    left: 50%;
+    margin-left: -29%;
 }
+
 #missionBG {
-    width: 27%;
+    width: 300px;
     float: left;
     margin-left: 5%;
 }
+
 #missionBG2 {
-    width: 40%;
+    width: 400px;
     float: right;
-    margin-right: 5%;
+    margin-right: 4%;
 }
+
 #missionStatement hr {
     border: 1px solid black;
     width: 36%;
@@ -319,3 +327,24 @@ ________________________________________________________________________________
     transition: width .5s, border .5s;
 }
     
+
+/* 
+Media rules
+___________________________________________________________________________________
+*/
+
+@media only screen and (max-width: 768px){
+    #missionBG2 {
+        display: none;
+    }
+    #missionBG {
+        display: none;
+    }
+    #missionStatement {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        left: 0px;
+    }
+}
+
