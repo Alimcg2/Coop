@@ -47,15 +47,14 @@ header a:hover {
     text-shadow: 0 0 4px #000000;
 }
 
-.dropbtn {
+#dropbtn {
     background-color: #d8d8d8;
     padding: 16px 0px;
     width: 100%;
 }
 
-.dropdown {
+#dropdown {
     position: relative;
-    display: none;
     width: 100%;
     text-align: center;
 }
@@ -76,13 +75,9 @@ header a:hover {
     display: block;
 }
 
-.dropdown:hover #dropdown-content{
+#dropdown:hover #dropdown-content{
     display: block;
 }
-
-
-    
-
 
 @font-face {
     font-family: sprout;
