@@ -5,6 +5,7 @@ ________________________________________________________________________________
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    overflow-X: hidden;
 }
 a:link {
     text-decoration: none;
@@ -89,7 +90,7 @@ header a:hover {
 
 
 /* Header for phones and tablets*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     header {
         display: none;
     }

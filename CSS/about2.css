@@ -1,0 +1,147 @@
+body {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #bca7a7 100%);
+}
+* { box-sizing: border-box; }
+
+.grid-sizer{
+  width: 200px;
+}
+.grid-item:hover img{
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+    -webkit-transition:  -webkit-filter 1s; /* Safari */
+    transition: filter 1s;
+}
+.grid-item--width1 {
+    width: 390px;
+}
+
+.grid-item--width2 {
+    width: 590px;
+}
+
+.grid-item--width3 {
+    width: 290px;
+}
+.text {
+    height: 600px;
+    background-color: white;
+    padding: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.text:hover {
+    background-color: rgba(0,0,0,0);
+    -webkit-transition:  background-color 2s; /* Safari */
+    transition: background-color 2s;
+}
+.grid-item img {
+    width: 100%;
+}
+
+#mainContent {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+hr {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.text:hover hr {
+    border: 1px solid #bca7a7;
+    width: 80%;
+    -webkit-transition: width .5s, border .5s; /* Safari */
+    transition: width .5s, border .5s;
+}
+
+/* highlight drag & drop */
+/* Draggabilly adds is-dragging */
+.grid-item.is-dragging,
+/* Packery adds class while transitioning to drop position */
+.grid-item.is-positioning-post-drag {
+  z-index: 2; /* keep dragged item on top */
+}
+#beet, #slice, #chard {
+    
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    -webkit-filter: initial; /* Safari 6.0 - 9.0 */
+    filter: initial;
+}
+#beet {
+    width: 300px;
+    margin-top: 180px;
+    margin-left: 150px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
+
+#slice {
+    width: 250px;
+    margin-top: 350px;
+    margin-left: -400px;
+}
+
+#chard {
+    width: 200px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+    margin-left: 550px;
+    margin-top: 300px;
+}
+
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 1000px) {
+    #beet, #slice, #chard {
+        display: none;
+    }
+    #mainContent {
+        width: 500px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .grid-item--width1 {
+        width: 190px;
+    }
+
+    .grid-item--width2 {
+        width: 290px;
+    }
+
+    .grid-item--width3 {
+        width: 145px;
+    }
+    .text {
+        height: 300px;
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 500px) {
+    #mainContent {
+        width: 100%;
+    }
+    .grid-item {
+        display: none;
+    }
+    .text {
+        display: block;
+        width: 100%;
+        height: initial;
+    }
+    .shownMobile {
+        display: block;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1">
+	<title>UW Student Food Coop</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
+        <script src="jquery-3.2.1.min.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src="Tilt/tilt.jquery.js"></script>
+        <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+        <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+	<script type="text/javascript" src="JS/about2.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/about2.css">
+	<link rel="stylesheet" type="text/css" href="CSS/base.css">
+</head>
+  <body>
+    <div class="dropdown">
+      <div class="dropbtn">Menu</div>
+      <div class="dropdown-content">
+	<a href="home.html">Home</a>
+	<a href="about2.html">About</a>
+	<a href="recipes.html">Recipes</a>
+	<a href="beanbasket.html">Store</a>
+	<a href="involved.html">Involvement</a>
+	<a href="current.html">Events</a>
+      </div>
+    </div>
+    <header>
+      <a href="home.html">Home</a>
+      <a href="about2.html">About</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="beanbasket.html">Store</a>
+      <a href="involved.html">Involvement</a>
+      <a href="current.html">Events</a>
+    </header>
+    <div class="grid"  id="mainContent">
+      
+  <div class="grid-sizer"></div>
+      <div class="grid-item grid-item--width1"> <img src="Images/About/stirring2.jpg"></div>
+      <div   class="grid-item grid-item--width2 text" >
+        <h2>Our Philosophy</h2>
+        <hr>
+        <img src="Images/Individual/beet.png" id="beet">
+        <p>We are first and foremost a group of students concerned about the environmental, social, economic, and health impacts of our agro-food system. ASUW SFC members are a diverse group of students from a wide variety of disciplines and backgrounds, who’ve come together because we share a passion for improving our own health and the health of our planet through food. We value student autonomy and ensure that all decisions related to running the cooperative are made by students.</p>
+      </div>
+      <div class=" grid-item grid-item--width1"> <img src="Images/About/feast.jpg"></div>
+      <div class="grid-item shownMobile grid-item--width2"> <img src="Images/About/notworking.jpg"></div>
+      <div class="grid-item grid-item--width1"> <img src="Images/About/veggieplatter.jpg"></div>
+      
+      <div class="grid-item grid-item--width2 text" >
+        <h2>Our Pledge</h2>
+        <hr>
+        <p>TO SUPPORT access to healthy and affordable food for students</p>
+        <p>TO ACHIEVE freedom from an unsustainable food system</p>
+        <p>TO PROMOTE the UW Farm and other local growers</p>
+        <p>TO ENRICH student lives with experience in ethical practices</p>
+        <p>TO EDUCATE our community about local and sustainable food</p>
+        <p>TO BUILD a foundation for a collaborative food community on campus</p>
+        <p>TO CULTIVATE a thriving cooperative community that provides opportunities for student growth</p>
+      </div>
+      <div class="grid-item grid-item--width1"> <img src="Images/About/coloring.jpg"></div>
+      <div class="grid-item  grid-item--width3"> <img src="Images/About/involved2.jpg"></div>
+      <div class="grid-item  grid-item--width3"> <img src="Images/About/involved3.jpg"></div>
+      <div class="grid-item shownMobile grid-item--width1"> <img src="Images/About/enjoying.jpg"></div>
+      <div id="sustainable" class="grid-item grid-item--width2 text" >
+        <h2>Our Values - Sustainable</h2>
+        <hr>
+        <img src="Images/Individual/slice.png" id="slice">
+        <p>LOCAL — Sourcing local food is a sustainable practice that can greatly reduce the use of fossil fuels. We can help to ensure the growth of our local economy by purchasing fresh, seasonal products from local farmers whenever possible.</p>
+        <p>GROWING PRACTICES — We support farmers who grow food in a way that is harmonious with the environment. Ideally synthetic fertilizers, pesticides, herbicides, and hormone supplements are not used, which helps protect our land, our food, and our community from chemical pollution and contamination.</p>
+        <p>VEGETARIAN — We continue to uphold is the desire to provide healthy vegan and vegetarian meal options on campus. A vegan/vegetarian diet is more sustainable because the production of plant material requires less energy input per calorie produced than the production of meat.</p>
+      </div>
+      <div class="grid-item  grid-item--width1"> <img src="Images/About/empty.jpg"></div>
+      <div class="grid-item grid-item--width3 "> <img src="Images/About/saladbowl.jpg"></div>
+      <div class="grid-item grid-item--width3 "> <img src="Images/About/cooperative.jpg"></div>
+      <div class="grid-item grid-item--width1"> <img src="Images/About/involved4.jpg"></div>
+      <div class="grid-item shownMobile grid-item--width1"> <img src="Images/About/all3.jpg"></div>
+      
+      <div id="ethical" class="grid-item grid-item--width2 text" >
+        <h2>Our Values - Ethical</h2>
+        <hr>
+        <p>The production of agricultural goods is crucial to the livelihood of a significant portion of the world. Unfortunately, many agricultural workers are treated and compensated unfairly within the industrial food system. We aim to source our food from organizations that adhere to policies that ensure fairness for producers. Additionally, the animals in the factory farm system live an extremely low quality of life that we do not justify as ethical. Therefore as a cooperative we choose not to consume meat. ASUW SFC believes in food sovereignty, as we recognize the inherent right of communities, businesses, and farmers to grow, sell, and eat food that is sustainably produced, healthy, humane, affordable, and accessible to everyone.</p>
+      </div>
+    
+      <div class="grid-item shownMobile grid-item--width1"> <img src="Images/About/all2.jpg"></div>
+      <div class="grid-item  grid-item--width1"> <img src="Images/About/involved1.jpg"></div>
+      <div class="grid-item  grid-item--width2"> <img src="Images/About/carrots.jpg"></div>
+      <div id="cooperative" class="grid-item grid-item--width2 text" >
+        <h2>Our Values - Cooperative</h2>
+        <hr>
+        <img src="Images/Individual/chard.png" id="chard">
+        <p>We believe that community-driven, transparent, democratic organizations empower their members to enact social change and ultimately create a more sustainable, loving community. We are a cooperative organization that embraces the seven cooperative principles: voluntary and open membership, democratic management, participation, independence, education, cooperative, and community involvement.</p>
+      </div>
+    
+      <div class="grid-item  grid-item--width1"> <img src="Images/About/IMG_8091-1.jpg"></div>
+      
+    </div>
+    <script src="Tilt/tilt.jquery.js"></script>
+  </body>
+</html>
