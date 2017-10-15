@@ -1,0 +1,173 @@
+h1 {
+    font-size: 80px;
+    font-weight: 100;
+    text-align: center;
+}
+/* 
+The about boxes
+___________________________________________________________________________________
+*/
+#leaf {
+    position: absolute;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: 80px;
+}
+#aboutText {
+    width: 50%;
+    margin: auto;
+}
+
+#aboutImgBox{
+    width: 40%;
+    padding: 20px;
+    border: 2px solid #d1d1d1;
+}
+
+#aboutImg {
+    width: 100%;
+    margin: auto;
+    display: inline;
+}
+
+#about {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.aboutBox {
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #d1d1d1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.aboutBox:hover, #aboutImgBox:hover {
+    background-color: #f7eaea;
+    border: 2px solid #bca7a7;
+    transition: border 1s, background-color 1s;
+}
+
+.about {
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* 
+The menu
+___________________________________________________________________________________
+*/
+#beet {
+    width: 300px;
+    position: absolute;
+    margin-left: 200px;
+    z-index: 0;
+}
+h3 {
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-weight: 100;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.category {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 3;
+}
+#mainContent {
+    width: 50%;
+    padding: 40px 0px;
+    margin:auto;
+    background-image: linear-gradient(180deg, #d8d8d8 0%, #bca7a7 100%);
+    margin-top: 100px;
+    z-index: -1;
+}
+.item{
+    margin-left: -50%;
+    padding:10px;
+}
+.price {
+    margin-left: 50%;
+    margin-top: -30px;
+}
+.hrMenu {
+    width: 50%;
+    border: .5px solid black;
+}
+.category:hover .hrMenu {
+    width: 30%;
+    border: .5px solid #d1d1d1;
+    transition: border 1s, width 1s;
+}
+
+
+/* 
+Order ahead
+___________________________________________________________________________________
+*/
+
+iframe {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#orderLink {
+    font-size: 28px;
+    color: black;
+    background-color: #bca7a7;
+    transition: background-color 3s;
+    padding: 20px;
+}
+#orderLink:link{
+    color:black;
+}
+#orderLink:visited{
+    color:black;
+}
+
+#orderLink:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 3s;
+}
+
+
+
+/* 
+mobile
+___________________________________________________________________________________
+*/
+/* Header for phones and tablets*/
+@media screen and (max-width: 600px) {
+    #mainContent{
+        width: 100%;
+        padding: 0px;
+    }
+    iframe {
+        width:100%;
+    }
+    #beet {
+        display: none;
+    }
+}
+
+/* Header for phones and tablets*/
+@media screen and (max-width: 1000px) {
+    #aboutImgBox {
+        display: none;
+    }
+    #aboutText {
+        width: 100%;
+    }
+    #leaf {
+        z-index: -1;
+    }
+}

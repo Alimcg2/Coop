@@ -1,0 +1,169 @@
+
+/* 
+Title and description
+___________________________________________________________________________________
+*/
+
+h2 {
+    font-size: 80px;
+    font-weight: 100;
+}
+#descr{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+#descr p{
+    width: 70%;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 2px solid #d1d1d1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#descr p:hover {
+    background-color: #f7eaea;
+    border: 2px solid #bca7a7;
+    transition: border 1s, background-color 1s;
+}
+#leaf {
+    position: absolute;
+    width: 200px;
+    margin-left: -40%;
+    margin-top: 150px;
+}
+
+/* 
+The ways to get involved
+___________________________________________________________________________________
+*/
+
+
+.slanted:before, .slanted:after {
+    content: "";
+    height: 200px;
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    margin-top: -100px;
+    transform: skewY(5deg);
+}
+.way {
+    display: flex;
+    margin-top: 400px;
+}
+.left::before, .left::after{
+    transform: skewY(5deg);
+}
+.right::before, .right::after{
+    transform: skewY(-5deg);
+}
+.left{
+    background-image: linear-gradient(180deg, #d8d8d8 0%, #bca7a7 100%);
+}
+.right {
+    background-image: linear-gradient(180deg, #bca7a7 0%, #d8d8d8 100%);
+}
+.left:before {
+    background-color: #d8d8d8;
+}
+.right:after {
+    background-color: #d8d8d8;
+}
+.left:after {
+    background-color: #bca7a7;
+}
+.right:before {
+    background-color: #bca7a7;
+}
+    
+.text {
+    width: 50%;
+}
+.img {
+    width: 50%;
+}
+.img img {
+    width: 400px;
+    margin: 0px;
+}
+.textBox {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: 400px;
+    top: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transform: translateY(-40%);
+}
+.textBox p{
+    position: relative;
+    margin-top: 30px;
+}
+.textBox h3 {
+    font-size: 30px;
+    position: relative;
+}
+hr {
+    width: 70%;
+    border: 0.5px solid black;
+}
+.way:hover hr {
+    width: 40%;
+    border: 1px solid white;
+    transition: border 1s, width 1s;
+}
+
+.leaf-under {
+    width: 200px;
+    position: absolute;
+}
+.leaf-over {
+    width: 300px;
+    position: absolute;
+}
+.left .leaf-under {
+    right: 33%;
+    margin-top: 150px;
+}
+.left .leaf-over {
+    margin-top: -100px;
+    right: 0px;
+}
+.right .leaf-under {
+    left: 33%;
+    margin-top: 150px;
+}
+.right .leaf-over {
+    margin-top: -100px;
+    left: 0px;
+}
+
+
+/* 
+mobile
+___________________________________________________________________________________
+*/
+/* Header for phones and tablets*/
+@media screen and (max-width: 600px) {
+
+    #leaf {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .img {
+        display: none;
+    }
+    .text {
+        width: 100%;
+    }
+    #leaf {
+        z-index: -1;
+    }
+}

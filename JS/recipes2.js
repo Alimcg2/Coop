@@ -11,19 +11,8 @@
             "Dessert" : [],
             "Drinks" : [] };
         getData();
-        // handles the resizing of the recipe card
-        window.onscroll = function(){
-            var scrollTop = window.scrollY;
-            if (scrollTop > 300) {
-                $("recipe").style.height = "80%";
-                $("image").style.height = "80%";
-            } else {
-                $("recipe").style.height = "40%";
-                $("image").style.height = "100%";
+        const mq = window.matchMedia( "(max-width: 620px)" );
 
-            }
-        }
-        
         // make ajax call to get the card data
         function getData(){
             var ajax = new XMLHttpRequest();
@@ -40,13 +29,12 @@
                 // creates all recipe snipits
                 var recipeContainerOuter = document.createElement("div");
                 recipeContainerOuter.className = "recipeContianerOuter";
+                var recipeImg = document.createElement("img");
+                recipeImg.src = data[i][6]["imgPath"];
+                recipeContainerOuter.appendChild(recipeImg);
                 var recipeContainer = document.createElement("div");
                 recipeContainer.className = "recipeContianer";
-                recipeContainerOuter.appendChild(recipeContainer);
-                var recipeImage = document.createElement("img");
-                recipeImage.src = data[i][6]["imgPath"];
-                recipeImage.className = "recipeImage";
-                recipeContainer.appendChild(recipeImage);
+                recipeContainer.id = i;
                 var recipeTitle = document.createElement("p");
                 recipeTitle.className = "recipeTitle";
                 recipeTitle.innerHTML = data[i][0]["title"];
@@ -54,17 +42,52 @@
                 var recipeBean = document.createElement("p");
                 recipeBean.className = "recipeBean";
                 recipeBean.innerHTML = data[i][1]["bean"] + "!";
-                recipeContainerOuter.id = i;
+                recipeContainerOuter.id = i + "_";
                 recipeContainer.appendChild(recipeBean);
-                mainContainer.appendChild(recipeContainerOuter);
-                recipeContainerOuter.onclick = openRecipe;
+
+                var recipeIngredients = document.createElement("ul");
+                recipeIngredients.innerHTML = "Ingredients:";
+                var ingredients = data[i][4]["ingredients"].split("^");
+                for (var j = 0; j < ingredients.length; j ++){
+                    var li = document.createElement("li");
+                    li.innerHTML = ingredients[j];
+                    recipeIngredients.appendChild(li);
+                }
+                recipeContainer.appendChild(recipeIngredients);
+                var recipeInstructions = document.createElement("ul");
+                recipeInstructions.innerHTML = "Instructions:";
+                var instructions = data[i][5]["instructions"].split("^");
+                for (var j = 0; j < instructions.length; j ++){
+                    var li = document.createElement("li");
+                    li.innerHTML = instructions[j];
+                    recipeInstructions.appendChild(li);
+                }
+                recipeContainer.appendChild(recipeInstructions);
                 
-                // populates the categories
+                recipeContainerOuter.appendChild(recipeContainer);
+                mainContainer.appendChild(recipeContainerOuter);
+                if (mq.matches) {
+                    // window width is at least 500px
+                    recipeContainerOuter.innerHTML = data[i][0]["title"];
+                } else {
+                    recipeContainer.classList.add("hidden");
+                    recipeContainerOuter.onmouseover = hoverRecipe;
+                    recipeContainerOuter.onmouseout = unhoverRecipe;
+                }
                 populateCategories(i);
             }
             createCategories();
         }
+        function hoverRecipe(){
+            this.childNodes[1].classList.remove("hidden");
+            this.childNodes[0].classList.add("opacity");
+        }
 
+        function unhoverRecipe(){
+            this.childNodes[1].classList.add("hidden");
+            this.childNodes[0].classList.remove("opacity");
+
+        }
         // populate the different categories with the card index
         function populateCategories(i){
             var tags = data[i][7]["tags"].split("^");
@@ -114,48 +137,14 @@
         function showHideCategories(category){
             var recipes = categories[category];
             for (var i = 0; i < data.length; i ++){
-                $(i.toString()).classList.add("hidden");
+                var id = i + "_";
+                $(id).classList.add("hidden");
             }
             for (var i = 0; i < recipes.length; i ++){
-                $(recipes[i].toString()).classList.remove("hidden");
+                $(recipes[i] + "_").classList.remove("hidden");
             }
         }
-                     
-
-
-        function openRecipe(){
-            var recipeData = data[this.id];
-            $("title").innerHTML = recipeData[0]["title"];
-            $("bean").innerHTML = recipeData[1]["bean"];
-            $("time").innerHTML = "Time: " + recipeData[2]["time"];
-            $("servings").innerHTML = "Servings: " + recipeData[3]["servings"];
-            $("image").src = recipeData[6]["imgPath"];
-            $("ingredients").innerHTML = "Ingredients:";
-            var ingredients = recipeData[4]["ingredients"].split("^");
-            for (var i = 0; i < ingredients.length; i ++){
-                var li = document.createElement("li");
-                li.innerHTML = ingredients[i];
-                $("ingredients").appendChild(li);
-            }
-            $("instructions").innerHTML = "Instructions:";
-            var instructions = recipeData[5]["instructions"].split("^");
-            for (var i = 0; i < instructions.length; i ++){
-                var li = document.createElement("li");
-                li.innerHTML = instructions[i];
-                $("instructions").appendChild(li);
-            }
-            
-            $("close").onclick = closeRecipe;
-            $("mainContent").style.width = "40%";
-            $("recipe").classList.remove("hidden");
-            
-        }
-        
-        function closeRecipe(){
-            $("mainContent").style.width = "100%";
-            $("recipe").classList.add("hidden");
-        }
-            
+           
     };
 
     

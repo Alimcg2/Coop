@@ -16,7 +16,6 @@
             divs.splice(13, 1);
             divs.splice(16, 1);
             var imgLocations = data["About"];
-            console.log(imgLocations);
             for (var i = 0; i < divs.length; i ++) {
                 console.log(imgLocations[i]);
                 divs[i].childNodes[1].src = imgLocations[i][0]["ImageURL"];

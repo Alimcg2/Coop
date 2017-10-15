@@ -15,14 +15,15 @@ body {
 }
 #bgImg {
     margin: auto;
-    transform-style: preserve-3d;
     background-image: url("Images/BACKGROUND.png");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 700px 100%;
     padding: 50px;
     margin-top: 50px;
-   
+}
+#bgTilt {
+    transform-style: preserve-3d;
 }
 #title h1 {
     font-size: 150px;
