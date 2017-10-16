@@ -32,6 +32,12 @@ h2 {
     margin-left: -40%;
     margin-top: 150px;
 }
+iframe {
+    margin-top: 50px;
+}
+#main {
+    margin-top: -100px;
+}
 
 /* 
 The ways to get involved
@@ -165,5 +171,15 @@ ________________________________________________________________________________
     }
     #leaf {
         z-index: -1;
+    }
+    .leaf-under {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        display: none;
     }
 }
