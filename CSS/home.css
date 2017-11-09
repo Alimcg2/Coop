@@ -151,7 +151,7 @@ h2 {
 }
 
 .slanted:before{    
-    top: -100px;
+    top: -200px;
     background-color:  #d8d8d8;
 }
 
@@ -301,13 +301,13 @@ h3 {
 }
 
 #missionBG {
-    width: 300px;
+    width: 30%;
     float: left;
     margin-left: 5%;
 }
 
 #missionBG2 {
-    width: 400px;
+    width: 40%;
     float: right;
     margin-right: 4%;
 }
@@ -331,6 +331,9 @@ ________________________________________________________________________________
 */
 
 @media only screen and (max-width: 768px){
+    .slanted:before {
+        top: -100px;
+    }
     #missionBG2 {
         display: none;
     }

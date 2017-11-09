@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="todoApp">
   <head>
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1">
     <title>UW Student Food Coop</title>
@@ -7,10 +7,10 @@
     <script src="jquery-3.2.1.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="Tilt/tilt.jquery.js"></script>
-    <script type="text/javascript" src="JS/recipes2.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/recipes2.css">
+    <script type="text/javascript" src="JS/schedule.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/schedule.css">
     <link rel="stylesheet" type="text/css" href="CSS/base.css">
-  </head>
+</head>
   <body>
     <div id="dropdown">
       <div id="dropbtn">Menu</div>
@@ -32,26 +32,31 @@
       <a href="events.html">Events</a>
     </header>
 
+    <input id="name" value="Name"></input>
+    <button id="submit">Submit Time</button>
+    <div id="nav">
+      <button id="prevWeek"><</button>
+      <h3 id="week"></h3>
+      <button id="nextWeek">></button>
+    </div>
+    <div id="change" class="hidden">
+      <p>Would you like to:</p>
+      <button id="addShift">Add Another Shift</button>
+      <button id="removeShift">Remove This Shift</button>
+      <div id="removeSure" class="hidden">
+        <p>Are you sure?</p>
+        <button id="yesRemove">Yes</button>
+        <button id="noRemove">No</button>
+      </div>
+    </div>
     
-    <div id="headerBorder">
-      <div id="header">
-        <div id="headerOuter">
-          <h2>Recipes</h2>
-          <div id="recipeSections">
-            <p id="catBreakfast">Breakfast</p>
-            <p id="catLunch">Lunch</p>
-            <p id="catDinner">Dinner</p>
-            <p id="catSides">Sides</p>
-            <p id="catDessert">Dessert</p>
-            <p id="catDrinks">Drinks</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="scheduler">
+      
 
-    <div id="all"> 
-      <div id="mainContent">
-      </div>
+
     </div>
+    
+    
   </body>
+
 </html>
