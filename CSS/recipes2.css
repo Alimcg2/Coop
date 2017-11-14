@@ -75,15 +75,10 @@ ________________________________________________________________________________
         overflow-x: hidden;
     }
 
-    .recipeContianerOuter img {
-        display: none;
-    }
     
     .recipeContianerOuter {
-        background-color: grey;
         width: 100%;
         margin: 10px;
-        height: 30px;
     }
 }
 

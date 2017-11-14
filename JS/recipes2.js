@@ -11,7 +11,6 @@
             "Dessert" : [],
             "Drinks" : [] };
         getData();
-        const mq = window.matchMedia( "(max-width: 620px)" );
 
         // make ajax call to get the card data
         function getData(){
@@ -66,14 +65,9 @@
                 
                 recipeContainerOuter.appendChild(recipeContainer);
                 mainContainer.appendChild(recipeContainerOuter);
-                if (mq.matches) {
-                    // window width is at least 500px
-                    recipeContainerOuter.innerHTML = data[i][0]["title"];
-                } else {
-                    recipeContainer.classList.add("hidden");
-                    recipeContainerOuter.onmouseover = hoverRecipe;
-                    recipeContainerOuter.onmouseout = unhoverRecipe;
-                }
+                recipeContainer.classList.add("hidden");
+                recipeContainerOuter.onmouseover = hoverRecipe;
+                recipeContainerOuter.onmouseout = unhoverRecipe;
                 populateCategories(i);
             }
             createCategories();
